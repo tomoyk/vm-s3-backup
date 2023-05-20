@@ -1,0 +1,10 @@
+[Unit]
+Description=s3-backup
+
+[Service]
+Type=oneshot
+ExecStart=/home/s3-backup/backup.sh
+WorkingDirectory=/home/s3-backup
+
+[Install]
+WantedBy=multi-user.target
